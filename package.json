@@ -1,0 +1,23 @@
+{
+  "name": "caption-renderer",
+  "version": "1.0.0",
+  "description": "Animated caption video renderer using Remotion",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.917.0",
+    "@remotion/bundler": "4.0.290",
+    "@remotion/cli": "4.0.290",
+    "@remotion/renderer": "4.0.290",
+    "dotenv": "^16.6.1",
+    "express": "^4.18.2",
+    "node-fetch": "^2.7.0",
+    "remotion": "^4.0.290"
+  },
+  "remotion": {
+    "entryPoint": "./src/remotion/index.tsx"
+  }
+}
